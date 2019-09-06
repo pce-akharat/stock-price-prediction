@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block head %} 
+<title>{{title}}</title>
+{% endblock %}
+
+{% block main_content %} 
+<div>
+    <h2>{{title}}</h2>
+    <img src="static/images/lasso.png" alt="Scatter plot">
+    <p>
+        Future date: {{future_date}} <br>
+        Future price: {{future_price}} <br>
+        R2 score: {{r2_score}}
+    </p>
+</div>
+{% endblock %}
